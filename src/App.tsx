@@ -4,7 +4,7 @@ import React from "react";
 import logo from "./logo.svg";
 
 function App() {
-  return <div className="App">Hello World JKN!</div>;
+  return <div className="App">Hello World JKN V.2!</div>;
 }
 
 export default App;
