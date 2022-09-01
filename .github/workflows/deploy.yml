@@ -25,7 +25,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME}
           
             #Now we have got the access of EC2 and we will start the deploy .
-            cd projects/react-with-docker
+            cd ./projects/react-with-docker/            
             sudo docker build . -t react-with-docker-image
             sudo docker stop react-with-docker-container
             sudo docker run -it --rm -p 3000:3000 -d --name react-with-docker-container react-with-docker-image
